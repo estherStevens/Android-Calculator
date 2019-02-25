@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public String result;
 
-    private double Value1 = Double.NaN;
+    private double Value1;
     private double Value2;
 
     public boolean addition;
