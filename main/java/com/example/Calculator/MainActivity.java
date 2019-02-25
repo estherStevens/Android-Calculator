@@ -92,21 +92,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void calculation() {
-
-/*        if (Double.isNaN(Value1)) {
-            Value1 = 0;
-        }*/
-
-/*        if (enteredText.getText().toString() == "") {
-            Value2 = 0;
-        } else {
-        }
-        */
-
+        
         Value2 = Double.parseDouble(enteredText.getText().toString());
         result = Double.toString(Value1) + Double.toString(Value2);
         if (subtraction == true) {
-//            textResult.setText(null);
             enteredText.setText(Value1 - Value2 + "");
             subtraction = false;
             result = (Value1 - Value2 + "");
@@ -114,7 +103,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (addition == true) {
-//            textResult.setText(null);
             enteredText.setText(Value1 + Value2 + "");
             addition = false;
             result = (Value1 + Value2 + "");
@@ -124,7 +112,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (multiplication == true) {
-//            textResult.setText(null);
             enteredText.setText(Value1 * Value2 + "");
             multiplication = false;
             result = (Value1 * Value2 + "");
@@ -132,7 +119,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (divison == true) {
-//            textResult.setText(null);
             enteredText.setText(Value1 / Value2 + "");
             divison = false;
             result = (Value1 / Value2 + "");
@@ -263,7 +249,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 calculation();
                 result = Double.toString(Value1) + Double.toString(Value2);
-//                textResult.setText(result);
                 enteredText.setText(null);
                 break;
         }
